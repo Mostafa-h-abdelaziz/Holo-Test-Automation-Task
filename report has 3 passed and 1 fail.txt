@@ -1,1 +1,0 @@
-file:///C:/Users/mostafa.hassan/Documents/Automation/cypress/reports/Holo-test-automation-report.html
