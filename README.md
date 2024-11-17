@@ -1,7 +1,7 @@
 # Holo-Test-Automation-Task
 
 How to execute the tests?
-1- Ensure Node.js is Installed.
+1- Ensure Node.js is Installed (v22.11.0).
 2- Install cypress using website or PowerShell/cmd commands (npx cypress install).
 3- Open the Cypress Test Runner or write "npx cypress open" in PowerShell.
 4- To create report or run the tests without active interface please use "npm run test:report / npx cypress run".
