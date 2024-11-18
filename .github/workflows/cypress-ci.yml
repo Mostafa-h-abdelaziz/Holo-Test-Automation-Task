@@ -14,8 +14,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: List directory contents
-      run: ls -la /home/runner/work/Holo-Test-Automation-Task/Holo-Test-Automation-Task/
+    - name: List root directory contents
+      run: ls -la
+
+    - name: List project folder contents
+      run: ls -la Holo-Test-Automation-Task
 
     - name: Setup Node.js
       uses: actions/setup-node@v3
@@ -23,7 +26,11 @@ jobs:
         node-version: 20
 
     - name: Install dependencies
-      run: npm install
+      run: |
+        cd Holo-Test-Automation-Task
+        npm install
 
     - name: Run Cypress Tests
-      run: npx cypress run
+      run: |
+        cd Holo-Test-Automation-Task
+        npx cypress run
