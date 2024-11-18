@@ -30,8 +30,9 @@ jobs:
         run: ls -la
 
       - name: Install dependencies
-           cd /home/runner/work/Holo-Test-Automation-Task/Holo-Test-Automation-Task
-        run: npm install
+        run: |
+             cd /home/runner/work/Holo-Test-Automation-Task/Holo-Test-Automation-Task
+             npm install
 
       - name: Run Cypress tests
         run: npx cypress run
