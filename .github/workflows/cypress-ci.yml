@@ -26,11 +26,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - name: Navigate to the project folder
+        run: cd Holo-Test-Automation-Task
+
       - name: List directory contents
         run: ls -la
 
-      - name: Install dependencies using npm ci
-        run: npm ci
+      - name: Install dependencies
+        run: npm install
 
       - name: Run Cypress tests
         run: npx cypress run
