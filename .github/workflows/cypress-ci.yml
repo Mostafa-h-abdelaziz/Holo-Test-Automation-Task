@@ -26,9 +26,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Navigate to the project folder
-        run: cd Holo-Test-Automation-Task
-
       - name: List directory contents
         run: ls -la
 
